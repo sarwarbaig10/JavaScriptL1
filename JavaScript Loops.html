@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript">
+function CntOptns()
+{
+  alert("There are "+ document.getElementById("list").length + "number of items in list.");
+}
+</script>
+</head>
+<body>
+<form>
+<select id="list">
+  <option>Phys</option>
+  <option>Chem</option>
+  <option>Bio</option>
+  <option>His</option>
+  <option>Civics</option>
+  <option>Geo</option>
+  
+</select>
+</br>
+<button onclick="CntOptns()"> Count Options in the Dropdown</button>
+</form>
+</body>
+</html>

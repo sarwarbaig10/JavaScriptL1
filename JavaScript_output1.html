@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Java Script Output</title>
+</head>
+
+
+<body>
+    Enter Guess No.:
+    <br/>
+    <input type="text" name="enter" value="" id="lolz"/>
+    <input type="button" value="click" OnClick="kk()"/>
+    <script type="text/javascript">
+       var lol = document.getElementById('lolz');
+	   var lol1=Math.random();
+	   lol1=Math.ceil((lol1*10));
+       function kk() 
+	   {
+           if(lol.value==lol1.value)
+		   alert('Values Matched');
+		   else
+		   alert('Values Not Matched. Refresh and try again');
+       }
+    </script>
+</body>
+</html>

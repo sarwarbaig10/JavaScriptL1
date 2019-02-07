@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head
+<body>
+
+<script>
+document.write("The First 100 Fibonacci numbers are" +"<br>");
+var a=0;
+var b=1;
+var c=0;
+var i=3;
+
+printFibonacci();
+function printFibonacci()
+{
+  document.write(a+ "<br>");
+  document.write(b+ "<br>");
+  while(i<=100)
+  {
+	c=a+b;
+	document.write(c+ "<br>");
+	a=b;
+	b=c;
+	i++;
+  }
+}
+
+</script>
+</body>
+</html>

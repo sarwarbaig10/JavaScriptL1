@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head
+<body>
+
+<script>
+var txt = prompt("Enter a sentence","Hello have a nice day");
+var len=txt.length;
+var occ=0;
+var count=0;
+searchOcc();
+function searchOcc()
+{
+	var x=prompt("Enter letter whose number of occurrences is to search","");
+	if(x==" ")
+	{
+		alert("You are searching for a blank character. Try with a valid letter");
+		var x=prompt("Enter letter whose number of occurrences is to search","");
+	}
+	while(count<len)
+	{
+		if(txt.charAt(count)==x)
+		{
+			occ=occ+1;
+		}
+		count=count+1;
+	}
+	
+	alert("The occurence is found to be " + occ);
+
+}
+</script>
+</body>
+</html>
